@@ -10,20 +10,14 @@ config_version=5
 
 [application]
 
-config/name="Levels"
-run/main_scene="res://Levels/Level1.tscn"
+config/name="Enemies"
+run/main_scene="res://Game.tscn"
 config/features=PackedStringArray("4.1")
-boot_splash/bg_color=Color(0, 0, 0, 1)
 config/icon="res://icon.png"
 
 [autoload]
 
 Global="*res://Global.gd"
-
-[filesystem]
-
-import/blender/enabled=false
-import/fbx/enabled=false
 
 [input]
 
@@ -63,4 +57,3 @@ crouch={
 renderer/rendering_method="gl_compatibility"
 environment/defaults/default_environment="res://default_env.tres"
 2d/snapping/use_gpu_pixel_snap=true
-quality/2d/use_pixel_snap=true
